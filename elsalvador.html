@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <title>AmCross Diaspora Geographic Profiler</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+    <style> html, body, #map { height:100%; padding:0; margin:0 } </style>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+hr { 
+    display: block;
+    margin-top: 0.0em;
+    margin-bottom: 0.0 em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    color: dimgrey;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Georgia-Regular, sans-serif;
+}
+    
+.banner {
+    width: 100%;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  float: left;
+  flex-grow: 1;
+  color:  black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color:  6D6E70;
+}
+
+.topnav a.active {
+  background-color: #9F9FA3;
+  color: #ED1B2E;
+}
+
+ .topnav a.home {
+          background-color: #ED1B2E;
+  color: white;
+         }
+
+    
+#bannerimage {
+  width: 100%;
+  background-image: url(ARC_Logo_Bttn_Horiz_RGB.png);
+  background-repeat: no-repeat; 
+  background-size: contain;
+  height: 80px;
+  background-color: white;
+  background-position: center;
+}
+    
+
+    
+    
+</style>
+</head>
+<body>
+    
+
+<div id="bannerimage"> 
+    </div>
+
+<hr>
+<div class="topnav">
+  <a class = "home" href="resources.html">Resources/Data</a>
+  <a href="phillipines.html">Philippines</a>
+  <a href="burma.html">Myanmar</a>
+  <a href="bangladesh.html">Bangladesh</a> 
+  <a href="vietnam.html">Vietnam</a>
+  <a href="indonesia.html">Indonesia</a>
+  <a href="nepal.html">Nepal</a>
+  <a class="active" href="elsalvador.html">El Salvador</a>
+  <a href="columbia.html">Columbia</a> 
+  <a href="honduras.html">Honduras</a>
+  <a href="haiti.html">Haiti</a>
+</div>
+
+    <hr>
+
+      
+
+      
+    <div><iframe width="100%" height="520" frameborder="0" src="https://redcross.carto.com/builder/3371bd62-36de-4318-8a39-6924c7de8791/embed?state=" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
+    
+    <!-- include cartodb.js library -->
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+
+    <script>
+      function main() {
+        var url = 'https://redcross.carto.com/api/v2/viz/1adf78c6-1ba2-4c22-8e7c-d9667cb51bbe/viz.json';
+
+
+        cartodb.createVis('map', url, {
+          search: true,
+          tiles_loader: true,
+          layer_selector: true,
+          https: true
+        })
+        .done(function(vis, layers) {
+
+          // Set max zoom
+          vis.map.set({
+            minZoom: 4,
+            maxZoom: 12,
+            center: (39.8283, -98.5795),
+          });
+
+        })
+        .error(function(err) {
+          console.log(err);
+        });
+      }
+ 
+      window.onload = main;
+    </script>
+    
+    
+  </body>
+</html>
