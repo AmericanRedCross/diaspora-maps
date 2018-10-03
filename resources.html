@@ -58,10 +58,49 @@ body {
 }
 
  .topnav a.home {
-          background-color: #ED1B2E;
+  background-color: #ED1B2E;
   color: white;
          }
-
+    
+.rbox {
+    overflow: scroll;
+    float: left;
+    width: 24.5%;
+    height: 80%;
+    padding: 2px;
+    font-family: Arial, Georgia-Regular, sans-serif;
+    
+    }
+    
+    .rbox scrollbar {
+    color:#aaaaaa;
+    }
+.rbox r1{
+    font-size: 14;
+    font-family: Arial, Georgia-Regular, sans-serif;
+    color: #aaaaaa;
+    float: left;
+    padding: 2%;
+    }
+    
+    .rbox r2{
+        font-size: 24;
+        color: black;
+        float:inherit;
+        padding: 13%;
+        position: center;
+    }
+    
+    .rbox r3{
+        font-size: 22;
+        color: black;
+        float:inherit;
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    
     
 #bannerimage {
   width: 100%;
@@ -88,13 +127,13 @@ body {
 <div class="topnav">
   <a class = "home" class="active" href="resources.html">Resources/Data</a>
   <a href="phillipines.html">Philippines</a>
-  <a href="burma.html">Burma</a>
+  <a href="burma.html">Myanmar</a>
   <a href="bangladesh.html">Bangladesh</a> 
   <a href="vietnam.html">Vietnam</a>
   <a href="indonesia.html">Indonesia</a>
   <a href="nepal.html">Nepal</a>
   <a href="elsalvador.html">El Salvador</a>
-  <a href="columbia.html">Columbia</a> 
+  <a href="columbia.html">Colombia</a> 
   <a href="honduras.html">Honduras</a>
   <a href="haiti.html">Haiti</a>
 </div>
@@ -104,7 +143,27 @@ body {
       
 
       
-    <div><iframe width="100%" height="80%" frameborder="0" src="https://redcross.carto.com/builder/ee5bb764-aa1e-439c-ad07-98d057ddc6e2/embed?zoom=4&center_lat=39&center_lon=-98" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
+    <div>
+        
+        <div class = rbox>
+            <r2> Resources Guide </r2>
+            <r1>A wide variety of organizations offer support for Diaspora groups throughout the United States. Many services, including visa support and other official matters, are offered by representative consulates and embassies of the home countries of these groups. Local and regional organizations also work to help support and connect these communities. Use the Consulates and Resources search tool to explore organizations for each group, and click on any single resource for contact information.</r1>
+            <r1>Explore the population distribution and vulnerability to fires of each Diaspora group by clicking their tabs. For more information, visit <A href="https://www.redcross.org/" style= "color: black;" >Redcross.org</A></r1>
+            <r2>Data Sources</r2>
+            <r1>Our population data came from the American Community survey. The statistic that is being mapped for each diaspora group is the total number of forign-born individuals that reported being from each of those countries. Its worth noting that this survey may not be entirely accurate, and that vulnerable population groups have a tendancy to underreport their population statistics.</r1>
+            <r1>Our data for our consolates and resources came from a variety of different sources, many of which were provided by the websites of the embassies themselves.</r1>
+            <r1><A href="https://www.census.gov/programs-surveys/acs/" style= "color: black;" >American Community Survey</A></r1>
+            <r1><A href="https://www.redcross.org/" style= "color: black;" >Red Cross Fire Data</A></r1>
+            <r1><A href= "https://embassy.goabroad.com/embassies-in/united-states" style= "color: black;" >Embassy Directory</A></r1>
+            <r1><a href="https://www.wikipedia.org" style= "color: black;"> Wikipedia</a></r1>
+            <r1><a href="https://www.fema.gov" style= "color: black;"> FEMA</a></r1>
+            <r1> </r1>
+            <r2> </r2>
+            </div>
+        
+        <iframe style="float:right" width="75%" height="80%" frameborder="0" src="https://redcross.carto.com/builder/b52f3181-3e39-43f1-a89c-4316b7ba07d9/embed?zoom=4&center_lat=39&center_lon=-98" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    
+    </div>
     
     <!-- include cartodb.js library -->
     <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>

@@ -1,0 +1,101 @@
+
+hr { 
+    display: block;
+    margin-top: 0.0em;
+    margin-bottom: 0.0 em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    color: dimgrey;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Georgia-Regular, sans-serif;
+}
+    
+.banner {
+    width: 100%;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  float: left;
+  flex-grow: 1;
+  color:  black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color:  6D6E70;
+}
+
+.topnav a.active {
+  background-color: #9F9FA3;
+  color: #ED1B2E;
+}
+
+ .topnav a.home {
+          background-color: #ED1B2E;
+  color: white;
+         }
+
+    
+#bannerimage {
+  width: 100%;
+  background-image: url(ARC_Logo_Bttn_Horiz_RGB.png);
+  background-repeat: no-repeat; 
+  background-size: contain;
+  height: 80px;
+  background-color: white;
+  background-position: center;
+}
+    
+.over {
+    position:absolute;
+    width: 250px;
+    bottom: 2%;
+    padding-bottom: 2%;
+    margin-bottom: auto;
+    right: 2%;
+    top: 75%;
+    z-index: 2;
+    background-color:transparent;
+    margin: 7px;
+    font-family: Arial, Georgia-Regular, sans-serif;
+    font-size: 12px;
+    color: #9b9c9c;
+}
+    
+iframe{
+    position: relative;
+    z-index:1;
+}
+    
+@media (max-width:800px) {
+   .over {
+       height: 0;
+       width: 0;
+        display:none;
+    }
+    }
+    
+@media (min-width:1300px) {
+   .over {
+    font-size: 14px;
+    top: 70%;
+    right: 4%;
+    }
+    }
